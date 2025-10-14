@@ -21,21 +21,43 @@
 
   <!-- HEADER -->
   <header class="bg-bleu text-white sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
-      <div class="flex items-center gap-3">
-        <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
-        <div>
-          <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
-          <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
-        </div>
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
+      <div>
+        <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
+        <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
-        <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
-        <a href="realisations.html" class="text-[color:var(--dore)] font-semibold">Réalisations</a>
-        <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
-      </nav>
     </div>
+
+    <!-- Bouton menu mobile -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Menu nav -->
+    <nav id="menu" class="hidden md:flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
+      <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
+      <a href="realisations.html" class="hover:text-[color:var(--dore)]">Réalisations</a>
+      <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- JS pou menu mobile toggle -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
   </header>
 
   <!-- SECTION PRINCIPALE -->
@@ -52,26 +74,19 @@
         Ouvrir le lien WhatsApp
       </a>
     </p>
-
     <!-- IMAGES -->
-    <div class="grid md:grid-cols-2 gap-8 justify-center mt-10">
-      <img src="images/ccet1.jpg" alt="Photo du CCET 1"
-           class="w-full rounded-lg shadow-lg border-4 border-[color:var(--dore)] object-cover">
-      <img src="images/ccet2.jpg" alt="Photo du CCET 2"
-           class="w-full rounded-lg shadow-lg border-4 border-[color:var(--dore)] object-cover">
-    </div>
-  </main>
-
+      
+</head>
+<body>
+  <main>
+    <h1 style="text-align:center; margin-bottom:20px;">
     <div class="images">
-      <img src="images/foto1.jpg.jpg" alt="foto du CCET 1">
-      <img src="images/foto2.jpg.jpg" alt="foto du CCET 2">
+      <img src="foto1.jpg.jpg" alt="photo du CCET 1">
+      <img src="foto2.jpg.jpg" alt="photo du CCET 2">
     </div>
   </main>
-
 </body>
 </html>
-
-
 
   <!-- FOOTER -->
   <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
