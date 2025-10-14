@@ -26,30 +26,44 @@
 
   <!-- HEADER -->
   <header class="bg-bleu text-white sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
-      <div class="flex items-center gap-3">
-        <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
-        <div>
-          <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
-          <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
-        </div>
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
+      <div>
+        <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
+        <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
-        <a href="declaration.html" class="hover:text-[color:var(--dore)] font-semibold accent">Déclaration</a>
-        <a href="realisations.html" class="hover:text-[color:var(--dore)]">Réalisations</a>
-        <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
-      </nav>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="bg-[color:var(--bleu)] text-white py-16 px-6 text-center animate-fadeIn">
-    <h2 class="text-3xl md:text-5xl font-bold mb-4">DÉCLARATION DE PRINCIPE</h2>
-    <p class="text-lg max-w-3xl mx-auto text-gray-200">
-      Parti Politique <span class="accent font-semibold">INDIGÈNE</span> d’Haïti — Mouvement de souveraineté, de mérite et d’identité nationale.
-    </p>
-  </section>
+    <!-- Bouton menu mobile -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Menu nav -->
+    <nav id="menu" class="hidden md:flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
+      <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
+      <a href="realisations.html" class="hover:text-[color:var(--dore)]">Réalisations</a>
+      <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- JS pou menu mobile toggle -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</section>
 
   <!-- CONTENU -->
   <main class="max-w-5xl mx-auto py-16 px-6 space-y-10 leading-relaxed text-justify">
