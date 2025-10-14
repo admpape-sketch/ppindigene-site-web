@@ -1,0 +1,28 @@
+/*style general*/
+body
+margin:0;
+font-family: arial, sans-serif;
+.navbar ul(
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    bacground-color:#333;
+    margin:0;
+    padding:0;
+)
+.navbar li(
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    display::-webkit-validation-bubble-text-block)
+    /*...responsive design...*/
+    @media screen {max: with 768px;
+        .navbar ul
+        flex-direction:colum;
+        align-items:center;
+        .navbar a
+        text-align:center;
+        boeder: bottom 1px; solid #555;
+                
+    }
+)

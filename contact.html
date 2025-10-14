@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PPIndigene — Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root {
+      --bleu: #0b2545;
+      --dore: #f5c542;
+    }
+    .accent { color: var(--dore); }
+    .bg-bleu { background-color: var(--bleu); }
+    .btn-main { background: var(--dore); color: var(--bleu); }
+  </style>
+</head>
+
+<body class="text-gray-900 bg-gray-50">
+  <!-- HEADER -->
+  <header class="bg-bleu text-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
+        <div>
+          <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGÈNE</span></h1>
+          <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
+        <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
+        <a href="realisations.html" class="hover:text-[color:var(--dore)]">Réalisations</a>
+        <a href="contact.html" class="text-[color:var(--dore)] font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION CONTACT -->
+  <main class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[color:var(--bleu)] mb-4">📞 Contact</h2>
+
+    <div class="text-gray-700 space-y-3 mb-10">
+      <p>📍 <strong>Adresse :</strong> 15, Tabarre 36, Commune de Tabarre, Haïti</p>
+      <p>📞 <strong>Téléphones :</strong> +509 3877 5285 / +509 4869 4747</p>
+      <p>📧 <strong>Email :</strong> <a href="mailto:ppindigene@gmail.com" class="text-[color:var(--bleu)] underline">ppindigene@gmail.com</a></p>
+    </div>
+
+    <!-- RÉSEAUX SOCIAUX -->
+    <h3 class="text-2xl font-bold text-[color:var(--bleu)] mb-6">🌐 Suivez-nous</h3>
+    <p class="text-gray-700 mb-4">Suivez-nous sur les réseaux sociaux :</p>
+
+    <div class="flex flex-wrap justify-center gap-8 text-3xl mb-12">
+      <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/channel/UCs0H2Yc2e7B-Vur8hK_PO7A/" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/partipolitiqueindigene123/#" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@partiindigeneofficiel" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-tiktok"></i></a>
+      <a href="https://whatsapp.com/channel/0029VbB01vIICVfcJEyy3z0a" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/PartiIndigene" target="_blank" class="hover:text-[color:var(--dore)]"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+    <!-- MOBILISATION -->
+    <section class="bg-gray-100 rounded-2xl py-10 px-6 shadow-lg">
+      <h3 class="text-2xl font-bold text-[color:var(--bleu)] mb-6">📣 Mobilisation</h3>
+      <p class="text-gray-800 mb-4">Participez à nos actions :</p>
+      <ul class="text-gray-700 space-y-2 text-left max-w-md mx-auto">
+        <li>• Campagnes citoyennes</li>
+        <li>• Formations idéologiques</li>
+        <li>• Conférences, tribunes, débats</li>
+        <li>• Mobilisation dans les communes, écoles, marchés, diaspora</li>
+      </ul>
+      <p class="mt-6 font-semibold text-[color:var(--bleu)]">
+        📍 Votre voix compte. Votre engagement fait la différence.
+      </p>
+      <p class="mt-2">👉 Rejoignez le Mouvement : 
+        <a href="mailto:ppindigene@gmail.com" class="text-[color:var(--bleu)] underline font-semibold">ppindigene@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
+    <div>© <span id="year"></span> Parti Politique Indigène — Tous droits réservés</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

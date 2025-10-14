@@ -1,0 +1,85 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PPIndigene — Réalisations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root {
+      --bleu: #0b2545;
+      --dore: #f5c542;
+    }
+    .accent { color: var(--dore); }
+    .bg-bleu { background-color: var(--bleu); }
+    .btn-main { background: var(--dore); color: var(--bleu); }
+  </style>
+</head>
+<body class="text-gray-900 bg-gray-50">
+
+  <!-- HEADER -->
+  <header class="bg-bleu text-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
+        <div>
+          <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
+          <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
+        <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
+        <a href="realisations.html" class="text-[color:var(--dore)] font-semibold">Réalisations</a>
+        <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION PRINCIPALE -->
+  <main class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[color:var(--bleu)] mb-4">Réalisation</h2>
+    <p class="text-gray-700 mb-8">
+      <strong>Conseil Consultatif d’État de la Transition (CCET)</strong><br>
+      Instance citoyenne visant à accompagner la refondation de l’État et à promouvoir une gouvernance de transition inclusive.
+    </p>
+
+    <p class="mb-6">
+      📘 <strong>Dépliant disponible ici :</strong><br>
+      <a href="https://whatsapp.com/channel/0029VbB01vIICVfcJEyy3z0a" target="_blank" class="text-[color:var(--bleu)] underline font-semibold hover:text-[color:var(--dore)]">
+        Ouvrir le lien WhatsApp
+      </a>
+    </p>
+
+    <!-- IMAGES -->
+    <div class="grid md:grid-cols-2 gap-8 justify-center mt-10">
+      <img src="images/ccet1.jpg" alt="Photo du CCET 1"
+           class="w-full rounded-lg shadow-lg border-4 border-[color:var(--dore)] object-cover">
+      <img src="images/ccet2.jpg" alt="Photo du CCET 2"
+           class="w-full rounded-lg shadow-lg border-4 border-[color:var(--dore)] object-cover">
+    </div>
+  </main>
+
+    <div class="images">
+      <img src="images/foto1.jpg.jpg" alt="foto du CCET 1">
+      <img src="images/foto2.jpg.jpg" alt="foto du CCET 2">
+    </div>
+  </main>
+
+</body>
+</html>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
+    <div>© <span id="year"></span> Parti Politique Indigène — Tous droits réservés</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
