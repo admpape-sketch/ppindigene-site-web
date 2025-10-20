@@ -100,6 +100,40 @@
       </p>
     </section>
   </main>
+     <!-- FORMULAIRE DE CONTACT -->
+<section class="bg-gray-100 py-16 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-[color:var(--bleu)] mb-6">Écrivez-nous</h3>
+    
+    <!-- 
+      NOUVELL CHAJMAN: Sèvi ak FormSubmit kòm yon sèvè ekstèn.
+      action: Met adrès sèvis la ak imèl ou ladan l. 
+      method: Fòk li POST pou voye done yo bay sèvis la.
+    -->
+    <form action="https://formsubmit.co/partipolitiqueindigene@gmail.com" method="POST" class="grid gap-4 text-left">
+      
+      <!-- Jaden Kache (Hidden Fields) pou FormSubmit -->
+      <!-- 1. Adrès kote moun nan pral retounen apre li voye mesaj la. 
+           Nou retounen l sou premye paj la (index.html). Ou ka chanje sa si w vle. -->
+      <input type="hidden" name="_next" value=admpape@gmail.com">
+      
+      <!-- 2. Sijè mesaj ou pral resevwa nan bwat imèl ou a. -->
+      <input type="hidden" name="_subject" value="Nouvo Mesaj Pati Politik Endijèn">
+
+      <!-- 3. Sa a anpeche FormSubmit montre yon paj mèsi (optional, retire li si w vle paj mèsi a)-->
+      <input type="hidden" name="_template" value="table">
+      
+      <!-- Jaden vizib yo (Input Fields) -->
+      <input type="text" name="Nom" placeholder="Nom complet" class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[color:var(--dore)]" required>
+      
+      <input type="email" name="Email" placeholder="Adresse email" class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[color:var(--dore)]" required>
+      
+      <textarea name="Message" placeholder="Votre message..." rows="5" class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-[color:var(--dore)]" required></textarea>
+      
+      <button type="submit" class="btn-main px-6 py-3 rounded-md font-semibold shadow hover:opacity-90 w-full">Envoyer le message</button>
+    </form>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
