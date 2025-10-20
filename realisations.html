@@ -87,6 +87,43 @@
   </main>
 </body>
 </html>
+<!-- 
+        Tag VIDEO a:
+        - controls: bay moun nan bouton pou l kontwole videyo a (play, pause, volim).
+        - width/height: nou itilize klas Tailwind pou kontwole gwosè a.
+      -->
+      <video controls class="w-full max-w-2xl mx-auto block rounded-lg shadow-xl bg-black" 
+             style="max-height: 400px;">
+          <!-- 
+            Ranplase 'non-dosye-videyo-a.mp4' ak non dosye MP4 ou an.
+            type="video/mp4" endike navigatè a se yon fòma MP4.
+          -->
+          <source src="video.mp4.mp4">
+          
+          <!-- Tèks sa a parèt si navigatè moun nan pa sipòte tag video a -->
+          Tèks sa a parèt si navigatè ou a pa sipòte eleman videyo a.
+      </video>
+  </div>
+</section>
+
+<!-- 
+        Tag AUDIO a:
+        - controls: bay moun nan bouton pou l kontwole odyo a (play, pause, volim).
+        - autoplay: (Opsyonèl) fè odyo a kòmanse poukont li lè paj la ouvri (pa toujou rekòmande).
+        - loop: (Opsyonèl) fè odyo a rekòmanse apre l fin fini.
+      -->
+      <audio controls class="w-full max-w-lg mx-auto block rounded-lg shadow-md p-2 bg-white">
+          <!-- 
+            Ranplase 'non-dosye-odyo-a.mp3' ak non dosye MP3 ou an.
+            type="audio/mp3" endike navigatè a se yon fòma MP3.
+          -->
+          <source src="audio.mp3.mp3">
+          
+          <!-- Tèks sa a parèt si navigatè moun nan pa sipòte tag audio a -->
+          Tèks sa a parèt si navigatè ou a pa sipòte eleman odyo a.
+      </audio>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
