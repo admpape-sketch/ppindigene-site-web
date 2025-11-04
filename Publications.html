@@ -1,0 +1,138 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PPIndigene — Réalisations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root {
+      --bleu: #0b2545;
+      --dore: #f5c542;
+    }
+    .accent { color: var(--dore); }
+    .bg-bleu { background-color: var(--bleu); }
+    .btn-main { background: var(--dore); color: var(--bleu); }
+  </style>
+</head>
+<body class="text-gray-900 bg-gray-50">
+
+  <!-- HEADER -->
+  <header class="bg-bleu text-white sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-20">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg.jpg" class="h-12 w-12 rounded-full border-2 border-[color:var(--dore)]" alt="logo" />
+      <div>
+        <h1 class="font-bold text-lg">Parti Politique <span class="accent">INDIGENE</span></h1>
+        <p class="text-xs opacity-80">Pour un Haïti fort, prospère</p>
+      </div>
+    </div>
+
+    <!-- Bouton menu mobile -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Menu nav -->
+    <nav id="menu" class="hidden md:flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-[color:var(--dore)]">Accueil</a>
+      <a href="declaration.html" class="hover:text-[color:var(--dore)]">Déclaration</a>
+      <a href="realisations.html" class="hover:text-[color:var(--dore)]">Réalisations</a>
+       <a href="Publications.html" class="hover:text-[color:var(--dore)]">Publications</a>
+      <a href="contact.html" class="hover:text-[color:var(--dore)]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- JS pou menu mobile toggle -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  </header>
+
+  <!-- SECTION PRINCIPALE -->
+   <main class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[color:var(--bleu)] mb-4">Publications</h2>
+    <p class="text-gray-700 mb-8">
+      </a>
+    </div>
+</section>
+       
+  <!-- IMAGES -->
+              
+              <!-- Publication Image/Texte -->
+ 
+      <section class="Publication">
+  <h2>statuts ppindigene</h2>
+  <p> <strong>"statuts du parti politique indigene"</strong>.</p>
+
+          
+
+      
+</head>
+
+
+
+<<i class="mdi mdi-format-section:"></i>>
+  <main>
+    <h1 style="text-align:center; margin-bottom:20px;">
+    <div class="images">
+      <img src="image12.jpg.jpg" alt="immigration economique">
+           </div>
+  </main>
+</section>
+</html>
+
+<<i class="mdi mdi-format-section:"></i>>
+  <main>
+    <h1 style="text-align:center; margin-bottom:20px;">
+    <div class="images">
+      <img src="image33.jpg.jpg.jpg" alt="immigration economique">
+           </div>
+  </main>
+</section>
+</html>
+<!-- 
+     <!-- 
+        Tag VIDEO a.
+        ATANSYON: Chemen sa a kòrèk sèlman si dosye videyo a nan menm dosye ak index.html la.
+        LI TRÈ ENPÒTAN POU NON SA A MATCHE EGZAKTEMAN AK NON DOSYE A SOU GITHUB (Lèt Majiskil/Miniskil)!
+      -->
+      <video controls class="w-full max-w-2xl mx-auto block rounded-lg shadow-xl bg-black" 
+             style="max-height: 400px;">
+          <!-- 
+            ASIRE W DOSYE VIDEO W LA RELE: 'video-promo.mp4' Egzakteman 
+          -->
+          <source src="video13.mp4.mp4" type="video/mp4">
+          
+          <!-- Tèks sa a parèt si navigatè moun nan pa sipòte tag video a -->
+          Tèks sa a parèt si navigatè ou a pa sipòte eleman videyo a.
+      </video>
+
+      <!-- SEKSYON statuts parti politique indigene -->
+       
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-bleu text-white py-6 text-center text-sm mt-12">
+    <div>© <span id="year"></span> Parti Politique Indigène — Tous droits réservés</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
